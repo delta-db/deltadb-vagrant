@@ -1,6 +1,6 @@
 # deltadb-vagrant
 
-Install Vagrant, VirtualBox and git:
+Install Vagrant, VirtualBox and git
 ---
 * http://www.vagrantup.com
 * https://www.virtualbox.org (don't worry about setting up any VMs as the steps below will cover this)
