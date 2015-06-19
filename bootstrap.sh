@@ -14,3 +14,7 @@ apt-get install -y postgresql libpq-dev
 
 # Set postgres password
 sudo -u postgres psql -c "ALTER USER Postgres WITH PASSWORD 'secret'"
+
+# Install globally for convenience
+npm install -g mocha
+npm install -g istanbul
