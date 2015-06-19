@@ -16,8 +16,8 @@ Set Up DeltaDB
     $ cd /vagrant/app
     $ git clone https://github.com/delta-db/deltadb-server.git
     $ cd deltadb-server
-    $ npm install
     $ cp config-default.js config.js
+    $ npm install
 
 
 
