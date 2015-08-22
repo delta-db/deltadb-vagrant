@@ -28,3 +28,8 @@ Launching VM & Testing
     $ vagrant ssh
     $ cd /vagrant/app/deltadb-server
     $ npm run test-node
+    
+
+Launch psql
+---
+    $ sudo -u postgres psql
