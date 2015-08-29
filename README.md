@@ -27,9 +27,21 @@ Launching VM & Testing
     $ vagrant up
     $ vagrant ssh
     $ cd /vagrant/app/deltadb-server
+    
+and then to test in node
+    
     $ npm run test-node
     
+or, to test in the browser
+
+    $ npm run test-node
+    
+or, you can test with a browser on your *host* machine
+
+    $ npm run dev
+    Run a browser such as Firefox or Chrome and go to http://127.0.0.1:8001/test/index.html
 
 Launch psql
 ---
+    $ vagrant ssh
     $ sudo -u postgres psql
