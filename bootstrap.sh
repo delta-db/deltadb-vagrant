@@ -9,6 +9,12 @@ apt-get install -y nodejs git
 # Needed by bcrypt, pg, etc...
 apt-get install -y g++
 
+# Need for selenium testing
+apt-get install -y default-jre
+
+# Install phantomjs manually as including it in package.json generates errors during npm install
+apt-get install phantomjs
+
 # Install postgres
 apt-get install -y postgresql libpq-dev
 
@@ -18,3 +24,23 @@ sudo -u postgres psql -c "ALTER USER Postgres WITH PASSWORD 'secret'"
 # Install globally for convenience
 npm install -g mocha
 npm install -g istanbul
+
+
+##################################################################################
+# ENABLE GUI - DOESN'T APPEAR TO WORK, NEED TO ENABLE vb.gui = true IN Vagrantfile
+##################################################################################
+
+# Install UI so that can test with Firefox and Chrome
+
+# Install Ubuntu Desktop
+# apt-get install ubuntu-desktop # unable to run any programs
+
+# Or, install minimalist GUI 
+# apt-get install xorg
+# apt-get -y install openbox # comes up with blank screen
+
+# Or, install gnome-shell
+# sudo apt-get -y install gnome-shell # firefox crashes
+
+# Install Firefox
+# apt-get install -y firefox
