@@ -34,7 +34,7 @@ and then to test in node
     
 or, to test in the browser
 
-    $ npm run test-node
+    $ npm run test-phantomjs
     
 or, you can test with a browser on your *host* machine
 
