@@ -40,6 +40,8 @@ or, you can test with a browser on your *host* machine
 
     $ npm run dev
     Run a browser such as Firefox or Chrome and go to http://127.0.0.1:8001/test/index.html
+    
+Unfortunately, [watchify doesn't work in the VM](http://stackoverflow.com/questions/27619248/watchify-update-event-never-fires) so you either need to use `touch` in the VM on files that you change or rerun `npm run dev` each time you change a file.
 
 Launch psql
 ---
