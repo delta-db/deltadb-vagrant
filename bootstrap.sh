@@ -24,6 +24,7 @@ sudo -u postgres psql -c "ALTER USER Postgres WITH PASSWORD 'secret'"
 # Install globally for convenience
 npm install -g mocha
 npm install -g istanbul
+npm install -g node-inspector
 
 
 ##################################################################################
@@ -35,7 +36,7 @@ npm install -g istanbul
 # Install Ubuntu Desktop
 # apt-get install ubuntu-desktop # unable to run any programs
 
-# Or, install minimalist GUI 
+# Or, install minimalist GUI
 # apt-get install xorg
 # apt-get -y install openbox # comes up with blank screen
 
