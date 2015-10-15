@@ -3,17 +3,23 @@
 # Get latest version of node
 curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -
 
+# Update apt-get
 apt-get update
-apt-get install -y nodejs git
+
+# Install node and git
+apt-get install -y nodejs build-essential git
+
+# Update npm
+npm install npm -g
 
 # Needed by bcrypt, pg, etc...
 apt-get install -y g++
 
-# Need for selenium testing
+# Needed for selenium testing
 apt-get install -y default-jre
 
 # Install phantomjs manually as including it in package.json generates errors during npm install
-apt-get install phantomjs
+apt-get install -y phantomjs
 
 # Install postgres
 apt-get install -y postgresql libpq-dev
