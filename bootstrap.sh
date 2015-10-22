@@ -32,6 +32,8 @@ npm install -g mocha
 npm install -g istanbul
 npm install -g node-inspector
 
+# Default to app dir
+echo "cd /vagrant/app" >> /home/vagrant/.bashrc
 
 ##################################################################################
 # ENABLE GUI - DOESN'T APPEAR TO WORK, NEED TO ENABLE vb.gui = true IN Vagrantfile
