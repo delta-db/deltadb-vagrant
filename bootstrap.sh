@@ -18,9 +18,6 @@ apt-get install -y g++
 # Needed for selenium testing
 apt-get install -y default-jre
 
-# Install phantomjs manually as including it in package.json generates errors during npm install
-apt-get install -y phantomjs
-
 # Install postgres
 apt-get install -y postgresql libpq-dev
 
@@ -31,6 +28,7 @@ sudo -u postgres psql -c "ALTER USER Postgres WITH PASSWORD 'secret'"
 npm install -g mocha
 npm install -g istanbul
 npm install -g node-inspector
+npm install -g phantomjs
 
 # Default to app dir
 echo "cd /vagrant/app" >> /home/vagrant/.bashrc
