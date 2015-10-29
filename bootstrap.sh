@@ -29,6 +29,7 @@ npm install -g mocha
 npm install -g istanbul
 npm install -g node-inspector
 npm install -g phantomjs
+npm install -g david
 
 # Default to app dir
 echo "cd /vagrant/app" >> /home/vagrant/.bashrc
