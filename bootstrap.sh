@@ -30,6 +30,7 @@ npm install -g istanbul
 npm install -g node-inspector
 npm install -g phantomjs
 npm install -g david
+npm install -g tin
 
 # Default to app dir
 echo "cd /vagrant/app" >> /home/vagrant/.bashrc
