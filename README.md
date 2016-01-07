@@ -13,12 +13,22 @@ Set Up DeltaDB
     $ cd deltadb-vagrant
     $ vagrant up
     $ vagrant ssh
-    $ cd /vagrant/app
     $ git clone https://github.com/delta-db/deltadb-server.git
     $ cd deltadb-server
-    $ cp config-default.js config.js
+    $ cp config-default.json config.json
     $ npm install
 
+
+Launching VM & Running DeltaDB Server
+---
+    $ cd deltadb-vagrant
+    $ vagrant up
+    $ vagrant ssh
+    $ cd deltadb-server
+    
+and then to launch DeltaDB
+    
+    $ npm run start
 
 
 Launching VM & Testing
@@ -26,7 +36,7 @@ Launching VM & Testing
     $ cd deltadb-vagrant
     $ vagrant up
     $ vagrant ssh
-    $ cd /vagrant/app/deltadb-server
+    $ cd deltadb-server
     
 and then to test in node
     
