@@ -13,10 +13,7 @@ Set Up DeltaDB
     $ cd deltadb-vagrant
     $ vagrant up
     $ vagrant ssh
-    $ git clone https://github.com/delta-db/deltadb-server.git
-    $ cd deltadb-server
-    $ cp config-default.json config.json
-    $ npm install
+    $ ../set-up.sh # downloads the git repos
 
 
 Launching VM & Running DeltaDB Server
@@ -25,33 +22,15 @@ Launching VM & Running DeltaDB Server
     $ vagrant up
     $ vagrant ssh
     $ cd deltadb-server
-    
+
 and then to launch DeltaDB
-    
+
     $ npm run start
 
+Then, to run examples against your local DeltaDB instance
 
-Launching VM & Testing
----
-    $ cd deltadb-vagrant
-    $ vagrant up
-    $ vagrant ssh
-    $ cd deltadb-server
-    
-and then to test in node
-    
-    $ npm run test-node
-    
-or, to test in the browser
+    Use a browser to visit deltadb/examples/hello/index-local.html
 
-    $ npm run test-phantomjs
-    
-or, you can test with a browser on your *host* machine
-
-    $ npm run dev
-    Run a browser such as Firefox or Chrome and go to http://127.0.0.1:8001/test/index.html
-    
-Unfortunately, [watchify doesn't work in the VM](http://stackoverflow.com/questions/27619248/watchify-update-event-never-fires) so you either need to use `touch` in the VM on files that you change or rerun `npm run dev` each time you change a file.
 
 Launch psql
 ---

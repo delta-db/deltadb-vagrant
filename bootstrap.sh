@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Get latest version of node
-curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -
+curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
 
 # Update apt-get
 apt-get update
@@ -32,6 +32,10 @@ npm install -g phantomjs
 npm install -g david
 npm install -g tin
 npm install -g bower
+
+# Add self-signed certificate to trusted certificates so that we can also test with SSL
+cp /vagrant/ssl/deltadb.crt /usr/local/share/ca-certificates/
+update-ca-certificates
 
 # Default to app dir
 echo "cd /vagrant/app" >> /home/vagrant/.bashrc
