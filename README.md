@@ -16,6 +16,19 @@ Set Up DeltaDB
     $ ../set-up.sh # downloads the git repos
 
 
+NPM Error
+---
+Note: You may receive an error like
+
+    ENOENT: no such file or directory, chmod '/vagrant/app/deltadb-server/node_modules/http-server/bin/http-server'
+    
+due to a bug in npm. To fix this:
+
+    $ cd /vagrant/app/deltadb-server
+    $ npm uninstall http-server # replace http-server with the package mentioned in the error
+    $ npm install
+
+
 Launching VM & Running DeltaDB Server
 ---
     $ cd deltadb-vagrant
