@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd app
+cd /vagrant/app
 
 git clone https://github.com/delta-db/deltadb.git
 cd deltadb
